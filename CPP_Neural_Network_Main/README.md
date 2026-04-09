@@ -25,7 +25,7 @@ This version is header-only and relies exclusively on free, open-source compiler
 
 ```bash
 # Clone the repository
-git clone [https://github.com/aanalpatil24/CPP-Deep-Learning-Neural-Network-Framework.git](https://github.com/aanalpatil24/CPP-Deep-Learning-Neural-Network-Framework.git)
+git clone <https://github.com/aanalpatil24/CPP-Deep-Learning-Neural-Network-Framework.git>
 cd CPP-Deep-Learning-Neural-Network-Framework/Cpp_Neural_Network_Main
 
 # Run the build script to compile the optimized benchmarks and tests
