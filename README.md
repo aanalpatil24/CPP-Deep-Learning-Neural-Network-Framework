@@ -1,11 +1,9 @@
 # NEXUS - C++ Deep Learning Neural Network Framework
 
-A zero-dependency, bare-metal deep learning execution framework engineered in **C++20** for sub-microsecond inference latency and deterministic memory behavior. 
-
-Designed from scratch for **High-Frequency Trading (HFT)** and real-time quantitative risk analytics, this engine is built to bypass standard OS overhead and maximize silicon-level throughput.
+A zero-dependency, bare-metal deep learning execution framework engineered in **C++20** for sub-microsecond inference latency and deterministic memory behaviour. 
+Designed from scratch for real-time quantitative risk analytics, this engine is built to bypass standard OS overhead and maximize silicon-level throughput.
 
 ## The Architectural Experiment
-
 This repository contains two distinct implementations of the exact same mathematical engine to demonstrate the performance impact of hardware-aware C++ design.
 
 ### 1. `CPP_Neural_Network_Base/` (The Control)
@@ -56,7 +54,8 @@ To compare the performance of the two implementations on your local hardware:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/YOUR_USERNAME/CPP_Neural_Network.git](https://github.com/YOUR_USERNAME/CPP_Neural_Network.git)
+git clone <https://github.com/aanalpatil24/CPP-Deep-Learning-Neural-Network-Framework.git>
+cd CPP-Deep-Learning-Neural-Network-Framework
 cd CPP_Neural_Network
 
 # Build and Run the Baseline (OOP) version
