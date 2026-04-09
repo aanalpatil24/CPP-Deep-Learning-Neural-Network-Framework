@@ -19,15 +19,15 @@ A zero-dependency, bare-metal deep learning execution framework engineered in C+
 * **Cache-Oblivious Math Engine:** Matrix multiplications are tile-blocked perfectly to L1/L2 cache geometries to eliminate Translation Lookaside Buffer (TLB) thrashing.
 * **AVX-512 Vectorization:** Both forward inference and backward propagation calculate via custom `_mm512_fmadd_ps` micro-kernels, achieving >85% peak theoretical FLOPS.
 
-## 🚀 Quick Start
+## 🚀 Quick Start (Optimized Engine)
 
-Nexus is header-only and relies exclusively on free, open-source compilers. Simply include the headers and compile with GCC/Clang. No Docker, no Kubernetes, no cloud dependencies.
+This version is header-only and relies exclusively on free, open-source compilers. It is optimized for hardware supporting **AVX-512**.
 
 ```bash
 # Clone the repository
-git clone [https://github.com/yourusername/nexus.git](https://github.com/yourusername/nexus.git)
-cd nexus
+git clone [https://github.com/aanalpatil24/CPP-Deep-Learning-Neural-Network-Framework.git](https://github.com/aanalpatil24/CPP-Deep-Learning-Neural-Network-Framework.git)
+cd CPP-Deep-Learning-Neural-Network-Framework/Cpp_Neural_Network_Main
 
-# Run the build script to compile tests and examples
+# Run the build script to compile the optimized benchmarks and tests
 chmod +x scripts/build.sh
 ./scripts/build.sh
