@@ -1,7 +1,8 @@
-# NEXUS: High-Performance Neural Network Execution Engine v2.1
+# NEXUS - C++ Neural Network Engine Main
 
- * A zero-dependency, bare-metal deep learning framework engineered for sub-microsecond inference latency and deterministic memory behavior.
- * Architecture: C++20 | AVX-512F/AVX2 | Cache-Oblivious Algorithms 
+A zero-dependency, bare-metal deep learning execution framework engineered in C++20 for sub-microsecond inference latency and highly deterministic memory behaviour. Designed from scratch for real-time quantitative risk analytics, bypassing all standard OS-level overhead.
+
+* Architecture: C++20 | AVX-512F/AVX2 | Cache-Oblivious Algorithms 
  * Arena Allocation | Lock-Free Design | NUMA-Aware
  * Performance Targets:
    - Matrix Multiplication: >85% peak FLOPS (AVX-512)
@@ -10,13 +11,6 @@
    - Latency: <200ns for typical MLP forward pass
    - Throughput: Millions of inferences/second per core
  ---
-
-
-# NEXUS - C++ Neural Network Engine Main
-
-A zero-dependency, bare-metal deep learning execution framework engineered in C++20 for sub-microsecond inference latency and highly deterministic memory behavior.
-
-Designed from scratch for High-Frequency Trading (HFT) and real-time quantitative risk analytics, bypassing all standard OS-level overhead.
 
 ## 🧠 Architectural Highlights
 
