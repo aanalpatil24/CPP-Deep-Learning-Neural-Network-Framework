@@ -1,0 +1,30 @@
+name: Nexus CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up GCC
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y g++-11
+        sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 100
+
+    - name: Build Engine and Tests
+      run: |
+        chmod +x scripts/build.sh
+        ./scripts/build.sh
+
+    - name: Run Math & Memory Tests
+      run: |
+        ./build/bin/test_gemm
+        ./build/bin/test_arena
